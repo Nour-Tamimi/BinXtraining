@@ -1,43 +1,49 @@
-# Week 2 — Math Foundations & EDA
+# Day 1 — Supervised Learning Concepts & the Scikit-learn API
 
 ## Overview
-Week 2 covered the mathematical foundations behind ML — statistics,
-probability, and linear algebra — then applied them directly through a full
-Exploratory Data Analysis (EDA) on a real dataset using Seaborn.
+
+Today covered the foundational concepts of supervised learning and the standard
+workflow used to build and evaluate models with scikit-learn. This forms the base
+for every supervised ML task going forward.
 
 ## What I Learned
 
-- **Descriptive statistics** — mean, median, mode, variance, standard
-  deviation, and IQR, and when each measure is the right one to use (e.g.
-  median over mean for skewed data).
-- **Probability & distributions** — core probability rules, conditional
-  probability, Bayes' theorem, and recognizing normal, binomial, and uniform
-  distributions.
-- **Linear algebra for ML** — representing data as vectors and matrices, the
-  dot product as the core prediction operation, and matrix multiplication
-  with shape-matching rules.
-- **EDA (univariate)** — using Seaborn to explore individual variables via
-  histograms, box plots, and count plots, plus outlier detection with the
-  IQR method.
-- **EDA (bivariate) & storytelling** — scatter plots, grouped box plots,
-  correlation matrices/heatmaps, and turning findings into a clear written
-  narrative (correlation ≠ causation).
+### 1. Supervised Learning
+Supervised learning means training a model on labeled data — examples where the
+correct answer is already known — so it can learn to predict that answer on new,
+unseen data.
 
-## Hands-On Work
+### 2. Regression vs. Classification
+The two types of supervised learning problems, distinguished by what's being predicted:
 
-1. Computed and interpreted central tendency and spread on a real dataset.
-2. Simulated coin flips and normal distributions, and verified a conditional
-   probability with code.
-3. Built vectors/matrices in NumPy and used the dot product and matrix
-   multiplication to generate predictions.
-4. Ran univariate EDA (distributions, box plots, IQR-based outlier flags) on
-   a real dataset.
-5. Ran bivariate EDA (scatter plots, correlation heatmap) and identified the
-   strongest relationships in the data.
-6. Assembled everything into one narrated EDA notebook and committed it to
-   GitHub.
+### 3. Features (X) and Target (y)
+- **X (features)** — the input columns the model learns from
+- **y (target)** — the single column of correct answers the model tries to predict
 
-## Key Takeaway
-Math isn't taught in isolation here — every concept maps directly onto how
-models represent and predict from data. The full EDA notebook from this week
-is the template for the exploration stage of every later project.
+
+### 4. The Scikit-learn API
+Every scikit-learn model follows the same four-step pattern, regardless of the
+algorithm underneath:
+
+| Step | Method | Purpose |
+|---|---|---|
+| 1. Instantiate | `model = Model()` | Create the model, set options |
+| 2. Fit | `model.fit(X_train, y_train)` | Learn patterns from training data |
+| 3. Predict | `model.predict(X_test)` | Predict on new/unseen data |
+| 4. Score | `model.score(X_test, y_test)` | Evaluate performance |
+
+### 5. Train/Test Split
+The most important rule in ML: **never evaluate a model on the data it was
+trained on.** A model can memorize training data and appear to perform
+perfectly, while actually failing on new, real-world data.
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+```
+
+- `test_size=0.2` holds out 20% of the data for testing
+- `random_state=42` fixes the split so results are reproducible
