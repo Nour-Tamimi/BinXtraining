@@ -1,4 +1,4 @@
-# Breast Cancer Classification — Model Comparison
+# Day 4 - Classification — Model Comparison
 
 ## Overview
 This project applies and compares four classification algorithms on the **Breast Cancer Wisconsin dataset** (`sklearn.datasets.load_breast_cancer`) to predict whether a tumor is **malignant** or **benign**.
