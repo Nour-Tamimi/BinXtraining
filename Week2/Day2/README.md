@@ -1,4 +1,4 @@
-# Probability & NumPy Simulations — Learning Log
+# Day 2 - robability & NumPy Simulations 
 
 A practical walkthrough of simulating probability concepts with NumPy: coin flips, normal distributions, conditional probability, and reproducibility. Each section includes the core idea, the code pattern, and the "why."
 

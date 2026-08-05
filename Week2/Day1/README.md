@@ -1,4 +1,4 @@
-# Descriptive Statistics — What I Learned Today
+# Day1 - Descriptive Statistics 
 
 ## Why this comes before modeling
 A model is basically a compressed summary of patterns in data. Before trusting a model's output, I need to know the data's own center, spread, and shape — otherwise I can't tell if a prediction looks "normal" or way off.

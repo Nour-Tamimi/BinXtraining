@@ -1,4 +1,4 @@
-# Linear Algebra for ML — What I Learned Today
+## Day 3 - Linear Algebra for ML 
 
 ## Vector
 A list of numbers describing one sample.

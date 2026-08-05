@@ -1,4 +1,4 @@
-# Logistic Regression & Classification Metrics — Study Notes
+# Day 3 -Logistic Regression & Classification Metrics 
 
 Summary of concepts covered today, using a weather prediction example (rainy = 0, sunny = 1) and the scikit-learn breast cancer dataset (malignant = 0, benign = 1).
 

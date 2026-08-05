@@ -1,4 +1,4 @@
-# EDA Lesson Notes — Univariate Analysis, Outliers & Relationships
+#   Day 4 - EDA Lesson Notes — Univariate Analysis, Outliers & Relationships
 
 ## 1. What is EDA and why it comes first
 

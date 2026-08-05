@@ -1,4 +1,4 @@
-# Data Analysis Notes — July 30, 2026
+#   Day 5 - Data Analysis Notes 
 
 A summary of today's topics covered: statistics concepts, chart types, and Python/pandas string & date handling.
 

@@ -1,4 +1,4 @@
-# ML Learning Notes — Baseline Comparison & Model Evaluation
+# Day 2 - ML Learning Notes — Baseline Comparison & Model Evaluation
 
 Summary of what I learned/worked on today.
 
