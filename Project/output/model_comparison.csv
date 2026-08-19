@@ -1,0 +1,6 @@
+,Logistic Regression (test set),Random Forest (test set),Random Forest (train set),Logistic Regression (5-fold CV mean),Random Forest (5-fold CV mean),Pipeline: Scaler+LogReg (test set),Pipeline: Scaler+LogReg (5-fold CV mean)
+Accuracy,0.792,0.992,1.0,0.789,0.983,0.792,0.788
+Precision,0.828,0.988,1.0,0.825,0.994,0.828,0.825
+Recall,0.833,1.0,1.0,0.834,0.978,0.833,0.833
+F1 Score,0.831,0.994,1.0,0.829,0.986,0.831,0.829
+ROC-AUC,0.889,0.998,1.0,0.875,0.995,0.889,0.875
