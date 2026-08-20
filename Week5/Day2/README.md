@@ -15,11 +15,8 @@ Grouped points by density instead of picking a k. Found 2 clusters and
 flagged 75 points as noise/outliers. Silhouette score: 0.211.
 
 **Hierarchical Clustering**
-Built a dendrogram and cut it into 2 clusters. Silhouette score came out
-very high (0.832), but this is likely misleading — a 2-cluster cut often
-produces one large group and one tiny group, which inflates the score
-artificially. Needs to be re-checked at a matching cluster count (5) for
-a fair comparison.
+Built a dendrogram and cut it into 5 clusters. Silhouette score came out
+close to others (0.214).
 
 ## Conclusion
 None of the three methods found strong, clearly separated clusters — all
@@ -29,7 +26,6 @@ has a real clinical outcome label. K-Means gave the most reliable and
 interpretable result of the three.
 
 ## Next Steps
-- Re-run Hierarchical at 5 clusters to compare fairly against K-Means
 - Tune DBSCAN's eps using a k-distance plot instead of guessing
 - Try RobustScaler instead of StandardScaler, since medical data often
   has extreme outliers that distort distance-based clustering
